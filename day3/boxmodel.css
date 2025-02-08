@@ -1,0 +1,11 @@
+.boxx{
+    padding:10px;
+    background-color: cornflowerblue;
+    color: crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 10px purple;
+    margin-bottom:20px ;
+}
+h1{
+    background-color: antiquewhite;
+}
