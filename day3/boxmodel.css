@@ -9,3 +9,13 @@
 h1{
     background-color: antiquewhite;
 }
+.pos{
+    position:fixed;
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top:-25px;
+    margin-left:-10px;
+    padding: 5px;
+    width:1080px;
+
+}
