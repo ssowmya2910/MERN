@@ -1,0 +1,17 @@
+.floatii{
+    float: left;
+    margin: 20px;
+    border: 10px solid rebeccapurple;
+    /* opacity: 0.5; */
+}
+img{
+    opacity: 0.5;
+}
+
+.floati{
+    float: right;
+    margin: 20px;
+    border: 10px solid rebeccapurple;
+    /* opacity: 0.5; */
+
+}
