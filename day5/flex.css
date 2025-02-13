@@ -21,13 +21,16 @@ ol{
     list-style-type: none;
     padding-left: 5px;
 }
+header{
+    background-color: bisque;
+}
 @media screen and (max-width:600px){
     nav{
         display: flex;
         flex-direction: column;
         list-style-type: none;
         justify-content:space-evenly;
-        background-color: bisque;
+        /* background-color: bisque; */
         padding: 10px;
         margin:0px;
     }
@@ -53,4 +56,8 @@ h1{
     padding: 20px;
 
 }
+.list2{
+    position:absolute;
+}
+
 
