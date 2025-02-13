@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation</title>
+    <link rel="stylesheet" href="tranNDani.css">
+    <style>
+        @keyframes animationDiv{
+            /* from{
+             background-color: burlywood;
+            }
+            to{
+                background-color: cadetblue;
+
+            } */
+             0%{
+                left: 0px;
+                right: 0px;
+                background-color: darkcyan;
+             }
+             25%{
+                left: 100px;
+                right: 0;
+                background-color: rgb(42, 0, 139);
+             }
+             50%{
+                left: 600px;
+                right: 0px;
+                background-color: rgb(179, 46, 170);
+             }
+             75%{
+                left:700px;
+                right: 0px;
+                background-color: rgb(129, 182, 126);
+             }
+             100%{
+                left: 0px;
+                right: 1000px;
+                background-color: rgb(255, 50, 46);
+             }
+        }
+        .transition{
+            color:paleturquoise;
+            background-color:cornflowerblue;
+            transition: width 2s,height 4s,transform 10s;
+
+
+            
+        }
+        .transition:hover{
+            background-color: coral;
+            color: darkcyan;
+            padding:30px;
+            height: 100px;
+            width: 300px;
+            transform:rotate(360deg);
+        }
+        .animation{
+            animation-name: animationDiv;
+            background-color: blueviolet;
+            position: absolute;
+            width:100px;
+            height:100px;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="download.jpg" class="transition" style="height: 200px ; width:200px; justify-content: center;"> -->
+     <img src="download.jpg" class="animation" style="height: 250px ; width:250px; justify-content: center;">
+
+    
+</body>
+</html>
