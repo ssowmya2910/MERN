@@ -70,10 +70,48 @@ console.log(object1['dept']);
 // console.log(a==b); //true
 // console.log(a === b); //false The triple equal operator is used to compare two values to see if they are equal and of the same type
 //bitwise operator
-a=70 
-b=72
-console.log(a&b);
-a=70
-b=32
-console.log(a|b);
-console.log(a^b);
+// a=70 
+// b=72
+// console.log(a&b);
+// a=70
+// b=32
+// console.log(a|b);
+// console.log(a^b);
+// array=["1",25,78,"hey"]
+//for(i in array){
+    //    console.log(i);
+    // }
+    //for(i for array){
+    //    console.log(i);
+    // }
+
+// object1={
+//     "firstname":"SJIT",
+//    "lastname":"tech",
+//    "dept":["CSE","IT",'ADS',"ECE"],
+
+// }
+
+// for([key,value] of Object.entries(object1)){
+//     console.log(object1.key,object1.value);
+//  }
+
+//  function testArrowFunction(){
+//     console.log("this is test arrow function")
+//  }
+//  testArrowFunction()
+//forEach loop
+array=["1",25,78,"hey"]
+array.forEach(element => {
+    console.log(element)
+});
+object1={
+    "firstname":"SJIT",
+   "lastname":"tech",
+   "dept":["CSE","IT",'ADS',"ECE"],
+
+}
+
+Object.entries(object1).forEach((key,value) =>{
+    console.log(key,value)
+})
