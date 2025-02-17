@@ -112,6 +112,6 @@ object1={
 
 }
 
-Object.entries(object1).forEach((key,value) =>{
-    console.log(key,value)
+Object.entries(object1).forEach(([key,value]) =>{  // op: firstname SJIT
+    console.log(key,value)  // if((key,value))  =>op: [ 'firstname', 'SJIT' ] 0
 })
