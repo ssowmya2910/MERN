@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: cadetblue;
+    padding:10px;
+    
+}
+
+li{
+    text-decoration: none;
+}
