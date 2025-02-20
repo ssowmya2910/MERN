@@ -1,0 +1,10 @@
+.form{
+    place-items: center;
+    margin-top: 50px;
+    padding:40px;
+    background-color:rgb(142, 178, 245);
+    border: 5px solid rgb(98, 113, 153);
+}
+h1{
+    margin-bottom: 30px;
+}

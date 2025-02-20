@@ -1,0 +1,7 @@
+.login{
+    place-items: center;
+    margin-top: 50px;
+    padding:40px;
+    background-color:rgb(206, 163, 208);
+    border: 5px solid rgb(153, 98, 134);
+}

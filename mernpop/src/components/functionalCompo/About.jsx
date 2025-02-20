@@ -7,9 +7,6 @@ function About(){
   function handleDecrement(){
      setNum(num-1);
   }
-  function addString(){
-    setStr(str+"")
-  }
   return (
     <div>
     <h1>About</h1>
@@ -18,8 +15,7 @@ function About(){
     <h3>Updating:{num}</h3>
     <button onClick={() => setNum(num+1)}>+</button>
     <h3>Get Input</h3>
-    <button onChange={()=>setStr(str+"")}><input type="button" value=""> </input></button>
-    </div>
+     </div>
   );
 } 
 
