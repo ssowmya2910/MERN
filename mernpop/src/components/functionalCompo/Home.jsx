@@ -2,7 +2,7 @@ function Home(properties) {
   var styling=
   {
    textAlign:'center',
-   backgroundColor:'blue',
+   backgroundColor:'palevioletred',
    color:'white'
   }
   return (
