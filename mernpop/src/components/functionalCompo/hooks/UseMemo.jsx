@@ -1,9 +1,7 @@
 import React from 'react'
 import { useState,useMemo } from 'react'
 function slowFunction(num){
-   for(var i=0;i<100000000;i++){
-       
-   }
+   for(var i=0;i<1000;i++){}
    return num*2;
 }
 const UseMemo = () => {
@@ -13,6 +11,9 @@ const UseMemo = () => {
         backgroundColor:theme?"red":"green",
         color:theme? "green":"red",
     }
+    var doublingUpaNumber=useMemo(()=>{
+        return slowFunction(number)
+    },[number])
   return (
     <>
     <button onClick={()=>setTheme(!theme)}>Toggle </button>
@@ -20,7 +21,7 @@ const UseMemo = () => {
     Numberbox:{""}
     <input type="number" value={number} onChange={(e)=>setNumber(e.target.value)}/>
     <h2>The number is{number}</h2>   
-    <h2> the num is {slowFunction(number)} </h2>
+    <h2> the num is {doublingUpaNumber} </h2>
     </div>
     </>
 
