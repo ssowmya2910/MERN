@@ -31,9 +31,16 @@ const Navbar = () => {
                 <li className='link'>
                   <Link to="/use-memo" className='link'>UseMemo</Link>
                 </li>
+                <li className='link'>
+                  <Link to="/use-memoize" className='link'>UseMemoize</Link>
+                </li>
               </ol>
             )}
+      
+
+            
           </li>
+          <li className='link'><Link to='/hoc'className='link'>HoC</Link></li>
     </nav>
    </header>
   )
