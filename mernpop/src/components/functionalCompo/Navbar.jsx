@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 const Navbar = () => {
   const[isOpen,setOpen]=useState(false);
+  const[dropdown,showDropdown]=useState(false);
   return (
    <header>
     <nav className='link'>
@@ -34,13 +35,37 @@ const Navbar = () => {
                 <li className='link'>
                   <Link to="/use-memoize" className='link'>UseMemoize</Link>
                 </li>
-              </ol>
-            )}
-      
 
-            
+                </ol>
+              
+            )}
+         
           </li>
           <li className='link'><Link to='/hoc'className='link'>HoC</Link></li>
+          <div
+          className="dropdown"
+          onMouseEnter={() => showDropdown(!dropdown)}
+          onMouseLeave={() => showDropdown(!dropdown)}
+        >
+          <span className="link">Memoization</span>
+
+            {dropdown && (
+              <ol className="dropdown-list">
+              <li>
+                <Link to="/memo" className="dropdown-link">
+                  Memo
+                </Link>
+              </li>
+              <li>
+                <Link to="/lazy" className="dropdown-link">
+                  Lazy Component
+                </Link>
+              </li>
+              </ol>
+            )}
+
+        </div>
+
     </nav>
    </header>
   )

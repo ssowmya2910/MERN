@@ -15,6 +15,8 @@ import UseMemo from './components/functionalCompo/hooks/UseMemo.jsx'
 import UseCallback from './components/functionalCompo/hooks/UseCallback.jsx'
 import UseMemoize from './components/functionalCompo/hooks/UseMemoize.jsx'
 import HoC from './components/functionalCompo/HoC/HoC.jsx'
+import Memo from './components/functionalCompo/hooks/memoization/Memo.jsx'
+import LazyLoadingSuspense from './components/functionalCompo/hooks/memoization/LazyLoadingSuspense.jsx'
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
           <Route path='/use-memo' element={<UseMemo/>}></Route>  
           <Route path='/use-callback' element={<UseCallback/>}></Route> 
           <Route path='/use-memoize' element={<UseMemoize/>}></Route>          
-   
+          <Route path='/memo' element={<Memo/>}/>
+          <Route path='/lazy' element={<LazyLoadingSuspense/>}/>
+
           <Route path='/login' element={<Login/>}></Route>
           
           
