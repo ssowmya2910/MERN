@@ -17,7 +17,8 @@ import UseMemoize from './components/functionalCompo/hooks/UseMemoize.jsx'
 import HoC from './components/functionalCompo/HoC/HoC.jsx'
 import Memo from './components/functionalCompo/hooks/memoization/Memo.jsx'
 import LazyLoadingSuspense from './components/functionalCompo/hooks/memoization/LazyLoadingSuspense.jsx'
-
+import CoE from './components/functionalCompo/ContextAPI/CoE.jsx'
+import Result from './components/functionalCompo/ContextAPI/Result.jsx'
 function App() {
   return (
       <main>
@@ -38,7 +39,7 @@ function App() {
           <Route path='/use-memoize' element={<UseMemoize/>}></Route>          
           <Route path='/memo' element={<Memo/>}/>
           <Route path='/lazy' element={<LazyLoadingSuspense/>}/>
-
+          <Route path='/res' element={<CoE/>}/>
           <Route path='/login' element={<Login/>}></Route>
           
           

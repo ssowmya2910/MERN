@@ -13,6 +13,8 @@ const Navbar = () => {
         <li className='link'><Link to='/gallery' className='link'>Gallery</Link></li>
         <li className='link'><Link to='/contact' className='link'>Contact</Link></li>
         <li className='link'><Link to='/signup'className='link'>Signup</Link></li>
+        <li className='link'><Link to='/res'className='link'>ContextAPI</Link></li>
+
         <li className="dropdown" onMouseEnter={()=>setOpen(!isOpen)} onMouseLeave={() => setOpen(!isOpen)}>
           <span>Hooks</span>
             {isOpen && (
